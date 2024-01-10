@@ -6,11 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" minlength="2">
-        <input type="range" min="0" max="10">
-        <button>Submit!</button>
-    </form>
+    <div  id="input">
+      <form action="">
+        <input type="text"  minlength="2">
+        <input type="range"   min="0" max="10">
+        <button type="button">Submit!</button>
+      </form>
+      <ul class="movie"></ul>
+    </div>
+
+    <div  id="movieRating">  
+    </div>
+
+    <div class="conatainer">
+        <label for="Sort by">Sort by</label>
+        <span>Featured</span>
+        <div class="custom-dropdown">
+            <span>
+                <select id="Sort by">
+                    <option value="default" >Featured</option>
+                    <option data-testid="Featured-option">Name</option>
+                    <option data-testid="RatingLowToHigh">Rating:low to high</option>
+                    <option data-testid="RatingHighToLow">Rating:high to low</option>
+                </select>
+            </span>
+            <ul>
+                <li>
+                    <div>Featured</div>
+                </li>
+                <li>
+                    <div>Name</div>
+                </li>
+                <li>
+                    <div>Rating:low to high</div>
+                </li>
+                <li>
+                    <div>Rating:high to low</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
   
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="movies.js"></script>
